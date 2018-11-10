@@ -1,0 +1,30 @@
+body{
+    width: 100%;
+    margin: 0;
+}
+
+h1{
+    font-family: 'Calibri';
+    text-align: center;
+}
+
+div{
+    width: min-content;
+    margin: auto 5%;
+    font-family: 'Calibri';
+}
+
+form{
+    background: #bdc3c7;
+    padding: 3px;
+    border: 10px solid rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#register{
+    float: left;
+}
+
+#signIn{
+    float: right;
+}
