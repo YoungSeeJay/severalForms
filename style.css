@@ -1,4 +1,5 @@
 body{
+    font-family: 'Calibri';
     width: 100%;
     margin: 0;
     background: #bdc3c7;  /* fallback for old browsers */
@@ -8,14 +9,13 @@ body{
 }
 
 h1{
-    font-family: 'Calibri';
+    font-family: 'Anton', sans-serif;
     text-align: center;
 }
 
 div{
     width: min-content;
-    margin: auto 5%;
-    font-family: 'Calibri';
+    margin: auto 7%;
 }
 
 form{
@@ -34,7 +34,7 @@ form{
     float: right;
 }
 
-input:not([type="checkbox"]){
+input:not([type="checkbox"]), select{
     background: #bdc3c7;
     height: 30px;
     width: 400px;
@@ -43,4 +43,27 @@ input:not([type="checkbox"]){
     background-position: 10px 10px; 
     background-repeat: no-repeat;
     padding-left: 40px; 
+}
+
+input[type="text"]{
+    background-image: url('lib/user.png');
+}
+
+input[type="password"]{
+    background-image: url('lib/lock.png');
+}
+
+input[type="email"]{
+    background-image: url('lib/envelope.png');
+}
+
+select{
+    height: 34px;
+    width: 442px;
+    background-image: url('lib/globe.png');
+}
+
+input[type="submit"]{
+    height: 34px;
+    width: 442px;
 }
