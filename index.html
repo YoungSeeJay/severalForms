@@ -23,7 +23,7 @@
     
             <input id="email" type="email" placeholder="Email" class="marginBottom" required>
 
-            <select name="location" class="marginBottom">
+            <select id="location" name="location" class="marginBottom">
                     <option value="North America">North America</option>
                     <option value="South America">South America</option>
                     <option value="Europe">Europe</option>
@@ -57,25 +57,28 @@
         </form>
     </div>
 
-    <div id="Send Email">
+    <div id="sendEmail">
     
-            <h1>Send Email</h1>
+        <h1>Send Email</h1>
         
-            <form action="#">
+        <form action="#">
                     
-                <input type="text" placeholder="Your Name" class="marginBottom" required>
+            <input type="text" placeholder="Your Name" class="marginBottom" required>
                             
-                <input id="email" type="email" placeholder="Your Email" class="marginBottom" required>
+            <input id="email" type="email" placeholder="Your Email" class="marginBottom" required>
 
-                <input id="typeMessage" type="text" placeholder="Type your message ..." class="marginBottom" required>
-                <label>
-                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Send a copy to my E-mail
-                </label> 
+            <textarea id="typeMessage" name="phone" placeholder="Type your message ..." required></textarea>
+
+            <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Send a copy to my E-mail
+            </label> 
                             
-                <input type="submit" value="Send Email">
+            <input type="submit" value="Send Email">
             
-            </form>
-        </div>
+        </form>
+    </div>
+
+    <!-- Author: Jonasz Cieślar -->
 
 </body>
 </html>

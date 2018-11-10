@@ -1,7 +1,6 @@
 body{
     font-family: 'Calibri';
-    width: 100%;
-    margin: 0;
+    margin: auto 10%;
     background: #bdc3c7;  /* fallback for old browsers */
     background: #F0C27B;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #4B1248, #F0C27B);  /* Chrome 10-25, Safari 5.1-6 */
@@ -17,7 +16,6 @@ h1{
 
 div{
     width: min-content;
-    margin: auto 7%;
 }
 
 form{
@@ -36,7 +34,13 @@ form{
     float: right;
 }
 
-input:not([type="checkbox"]), select{
+#sendEmail{
+    padding-top: 450px;
+}
+
+input:not([type="checkbox"]), select, textarea{
+    font-family: 'Calibri';
+    font-size: 17px;
     background: #E6E6E6;
     height: 30px;
     width: 400px;
@@ -59,15 +63,12 @@ input[type="email"]{
     background-image: url('lib/envelope.png');
 }
 
-label{
-    float: left;
-    font-size: 17px;
+textarea{
+    background-image: url('lib/pencil.png');
 }
 
-select{
-    height: 34px;
-    width: 436px;
-    background-image: url('lib/globe.png');
+label{
+    float: left;
 }
 
 input[type="submit"]{
@@ -78,17 +79,43 @@ input[type="submit"]{
     padding: 0;
 }
 
+input[type="submit"]:hover{
+    background: #F2F2F2;
+    border: 1px black solid;
+}
+
 #typeMessage{
-    height: 100px;
+    height: 80px;
 }
 
 input::placeholder, select{
     font-family: 'Calibri';
     font-size: 17px;
     color: darkgrey;
-    margin: 0;
+}
+
+textarea{
+    font-family: 'Calibri';
+    font-size: 17px;
+}
+
+textarea::placeholder{
+    padding: 3px 0 0 1px; 
+    color: darkgrey;
+    font-family: 'Calibri';
+    font-size: 17px;
+}
+
+select{
+    height: 34px;
+    width: 436px;
+    background-image: url('lib/globe.png');
+    color: black;
+    text-align: left;
 }
 
 .marginBottom{
     margin-bottom: 7px;
 }
+
+/* Author: Jonasz Cieślar */
