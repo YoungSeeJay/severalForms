@@ -21,8 +21,8 @@ div{
 }
 
 form{
-    background: #bdc3c7;
-    padding: 3px;
+    background: #D6D6D6;
+    padding: 7px;
     border: 10px solid rgba(0, 0, 0, 0.5);
     border-radius: 5px 20px 5px;
     text-align: center;
@@ -37,14 +37,14 @@ form{
 }
 
 input:not([type="checkbox"]), select{
-    background: #bdc3c7;
+    background: #E6E6E6;
     height: 30px;
     width: 400px;
     border: 1px solid darkgrey;
     border-radius: 7px;
-    background-position: 10px 10px; 
+    padding-left: 34px;
+    background-position: 8px 8px; 
     background-repeat: no-repeat;
-    padding-left: 40px; 
 }
 
 input[type="text"]{
@@ -59,15 +59,23 @@ input[type="email"]{
     background-image: url('lib/envelope.png');
 }
 
+label{
+    float: left;
+    font-size: 17px;
+}
+
 select{
     height: 34px;
-    width: 442px;
+    width: 436px;
     background-image: url('lib/globe.png');
 }
 
 input[type="submit"]{
     height: 34px;
-    width: 442px;
+    width: 436px;
+    font-family: 'Anton', sans-serif;
+    font-size: 17px;
+    padding: 0;
 }
 
 #typeMessage{
@@ -77,6 +85,10 @@ input[type="submit"]{
 input::placeholder, select{
     font-family: 'Calibri';
     font-size: 17px;
-    color: darkslategrey;
-    text-align: left;
+    color: darkgrey;
+    margin: 0;
+}
+
+.marginBottom{
+    margin-bottom: 7px;
 }
