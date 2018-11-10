@@ -9,6 +9,8 @@ body{
 }
 
 h1{
+    color: wheat;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-family: 'Anton', sans-serif;
     text-align: center;
 }
@@ -66,4 +68,15 @@ select{
 input[type="submit"]{
     height: 34px;
     width: 442px;
+}
+
+#typeMessage{
+    height: 100px;
+}
+
+input::placeholder, select{
+    font-family: 'Calibri';
+    font-size: 17px;
+    color: darkslategrey;
+    text-align: left;
 }
