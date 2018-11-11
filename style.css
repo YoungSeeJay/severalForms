@@ -16,6 +16,7 @@ h1{
 
 div{
     width: min-content;
+    margin-bottom: 50px;
 }
 
 form{
@@ -24,40 +25,6 @@ form{
     padding: 15px;
     border: 10px solid #434343;
     border-radius: 5px 20px 5px;
-}
-
-#left{
-    float: left;
-    margin-bottom: 50px;
-}
-
-#right{
-    float: right;
-    margin-bottom: 50px;
-}
-
-.margin-top{
-    margin-top: 5%;
-}
-
-.fullButton{
-    width: 436px;
-}
-
-.midButton{
-    width: 400px;
-}
-
-.halfButton{
-    width: 210px;
-}
-
-.float-right{
-    float: right;
-}
-
-#signIn{
-    text-align: right;
 }
 
 input:not([type="checkbox"]), select, textarea{
@@ -111,6 +78,34 @@ input[type="submit"]:hover{
     border: 1px black solid;
 }
 
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+.fullButton{
+    width: 436px;
+}
+
+.midButton{
+    width: 400px;
+}
+
+.halfButton{
+    width: 210px;
+}
+
+.margin-bottom{
+    margin-bottom: 7px;
+}
+
+#signIn{
+    text-align: right;
+}
+
 #typeMessage{
     height: 80px;
 }
@@ -135,15 +130,9 @@ textarea::placeholder{
 
 select{
     height: 34px;
-    width: 436px;
     background-image: url('lib/globe.png');
     color: black;
     text-align: left;
-}
-
-
-.margin-bottom{
-    margin-bottom: 7px;
 }
 
 /* Author: Jonasz Cieślar */
