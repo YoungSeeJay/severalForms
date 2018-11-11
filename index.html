@@ -10,21 +10,15 @@
 </head>
 <body>
 
-    <div id="register">
-    
-        <h1>Register Form</h1>
-    
-        <form action="#">
-    
-            <input id="username" type="text" placeholder="Username" class="marginBottom" required>
-                        
-            <input id="password" type="password" placeholder="Password" class="marginBottom" required>
-    
-            <input id="passwordConfirm" type="password" placeholder="Confirm Password" class="marginBottom" required>
-    
-            <input id="email" type="email" placeholder="Email" class="marginBottom" required>
-
-            <select id="location" name="location" class="marginBottom">
+    <div id="left">
+        <div id="register" class="margin-bottom-big">   
+            <h1>Register Form</h1>        
+            <form action="#">        
+                <input id="username" type="text" placeholder="Username" class="margin-bottom-small" required>                            
+                <input id="password" type="password" placeholder="Password" class="margin-bottom-small" required>        
+                <input id="passwordConfirm" type="password" placeholder="Confirm Password" class="margin-bottom-small" required>       
+                <input id="email" type="email" placeholder="Email" class="margin-bottom-small" required>   
+                <select id="location" name="location" class="margin-bottom-small">
                     <option value="North America">North America</option>
                     <option value="South America">South America</option>
                     <option value="Europe">Europe</option>
@@ -32,51 +26,45 @@
                     <option value="Asia">Asia</option>
                     <option value="Australia">Australia</option>
                     <option value="Africa">Africa</option>
-            </select>
-                
-            <label>
-                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> I have read and accept the terms of use
-            </label>
-                        
-            <input type="submit" value="Sign Up">
-        
-        </form>
-    </div>
-    
-    <div id="signIn">
-    
-        <h1>Sign In Form</h1>
-    
-        <form action="#">
-                
-            <input type="text" placeholder="Username" class="marginBottom" required>
-                        
-            <input type="password" placeholder="Password" class="marginBottom" required>
-                        
-            <input type="submit" value="Sign In">
-        
-        </form>
+                </select>                    
+                <label class="margin-bottom-small">
+                    <input type="checkbox" checked="checked" name="remember"> I have read and accept the terms of use
+                </label>                            
+                <input type="submit" value="Sign Up">           
+            </form>
+        </div>
+
+        <div id="sendEmail" class="margin-bottom-big">        
+            <h1>Send Email</h1>           
+            <form action="#">                       
+                <input type="text" placeholder="Your Name" class="margin-bottom-small" required>                              
+                <input id="email" type="email" placeholder="Your Email" class="margin-bottom-small" required>    
+                <textarea id="typeMessage" name="phone" placeholder="Type your message ..." required></textarea>    
+                <label class="margin-bottom-small">
+                    <input type="checkbox" checked="checked" name="remember"> Send a copy to my E-mail
+                </label>                                 
+                <input type="submit" value="Send Email">                
+            </form>
+        </div>
     </div>
 
-    <div id="sendEmail">
-    
-        <h1>Send Email</h1>
-        
-        <form action="#">
-                    
-            <input type="text" placeholder="Your Name" class="marginBottom" required>
-                            
-            <input id="email" type="email" placeholder="Your Email" class="marginBottom" required>
-
-            <textarea id="typeMessage" name="phone" placeholder="Type your message ..." required></textarea>
-
-            <label>
-                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Send a copy to my E-mail
-            </label> 
-                            
-            <input type="submit" value="Send Email">
-            
-        </form>
+    <div id="right">
+        <div id="signIn" class="margin-bottom-big">    
+            <h1>Sign In Form</h1>            
+            <form action="#">                        
+                <input type="text" placeholder="Username" class="margin-bottom-small" required>                                
+                <input type="password" placeholder="Password" class="margin-bottom-small" required>               
+                <input type="submit" value="Sign In">                
+            </form>    
+        </div>            
+        <div id="recover" class="margin-bottom-big">        
+            <h1>Sign In Form</h1>       
+            <form action="#">                    
+                <input type="text" placeholder="Username" class="margin-bottom-small" required>                            
+                <input type="password" placeholder="Password" class="margin-bottom-small" required>            
+                <input type="submit" value="Sign In">            
+            </form>    
+        </div>
     </div>
 
     <!-- Author: Jonasz Cieślar -->
