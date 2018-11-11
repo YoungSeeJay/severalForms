@@ -60,10 +60,6 @@ textarea{
     background-image: url('lib/pencil.png');
 }
 
-label{
-    float: left;
-}
-
 input[type="submit"]{
     background: #C9C9C9;
     height: 34px;
