@@ -1,10 +1,9 @@
 body{
     font-family: 'Calibri';
     margin: auto 10%;
-    background: #bdc3c7;  /* fallback for old browsers */
-    background: #F0C27B;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #4B1248, #F0C27B);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #4B1248, #F0C27B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 h1{
@@ -12,6 +11,7 @@ h1{
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-family: 'Anton', sans-serif;
     text-align: center;
+    margin-bottom: 3px;
 }
 
 div{
@@ -19,37 +19,58 @@ div{
 }
 
 form{
+    box-shadow: 1.5px 3px black;
     background: #D6D6D6;
-    padding: 7px;
-    border: 10px solid rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border: 10px solid #434343;
     border-radius: 5px 20px 5px;
-    text-align: center;
 }
 
 #left{
     float: left;
+    margin-bottom: 50px;
 }
 
 #right{
     float: right;
+    margin-bottom: 50px;
 }
 
 .margin-top{
     margin-top: 5%;
 }
 
+.fullButton{
+    width: 436px;
+}
+
+.midButton{
+    width: 400px;
+}
+
+.halfButton{
+    width: 210px;
+}
+
+.float-right{
+    float: right;
+}
+
+#signIn{
+    text-align: right;
+}
 
 input:not([type="checkbox"]), select, textarea{
     font-family: 'Calibri';
     font-size: 17px;
     background: #E6E6E6;
     height: 30px;
-    width: 400px;
     border: 1px solid darkgrey;
-    border-radius: 7px;
+    border-radius: 4px;
     padding-left: 34px;
     background-position: 8px 8px; 
     background-repeat: no-repeat;
+    box-shadow: white 0.3px 0.6px;
 }
 
 input[type="text"]{
@@ -64,6 +85,10 @@ input[type="email"]{
     background-image: url('lib/envelope.png');
 }
 
+input[type="tel"]{
+    background-image: url('lib/phone.png');
+}
+
 textarea{
     background-image: url('lib/pencil.png');
 }
@@ -73,11 +98,12 @@ label{
 }
 
 input[type="submit"]{
+    background: #C9C9C9;
     height: 34px;
-    width: 436px;
     font-family: 'Anton', sans-serif;
     font-size: 17px;
     padding: 0;
+    box-shadow: black 0.3px 0.6px;
 }
 
 input[type="submit"]:hover{
@@ -115,11 +141,9 @@ select{
     text-align: left;
 }
 
-.margin-bottom-small{
+
+.margin-bottom{
     margin-bottom: 7px;
 }
 
-.margin-bottom-big{
-    margin-bottom: 30px;
-}
 /* Author: Jonasz Cieślar */

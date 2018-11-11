@@ -8,61 +8,79 @@
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="lib/favicon.ico">
 </head>
+
 <body>
 
+    <!-- LEFT DIV -->
+
     <div id="left">
-        <div id="register" class="margin-bottom-big">   
+        <div id="register">   
             <h1>Register Form</h1>        
             <form action="#">        
-                <input id="username" type="text" placeholder="Username" class="margin-bottom-small" required>                            
-                <input id="password" type="password" placeholder="Password" class="margin-bottom-small" required>        
-                <input id="passwordConfirm" type="password" placeholder="Confirm Password" class="margin-bottom-small" required>       
-                <input id="email" type="email" placeholder="Email" class="margin-bottom-small" required>   
-                <select id="location" name="location" class="margin-bottom-small">
+                <input id="username" type="text" placeholder="Username" class="margin-bottom midButton" required>                            
+                <input id="password" type="password" placeholder="Password" class="margin-bottom midButton" required>        
+                <input id="passwordConfirm" type="password" placeholder="Confirm Password" class="margin-bottom midButton" required>       
+                <input id="email" type="email" placeholder="Email" class="margin-bottom midButton" required>   
+                <select id="location" name="location" class="margin-bottom">
+                    <option id="chooseYourCountry" value="Choose your country ...">Choose your country ...</option>
                     <option value="North America">North America</option>
                     <option value="South America">South America</option>
                     <option value="Europe">Europe</option>
                     <option value="Africa">Africa</option>
                     <option value="Asia">Asia</option>
                     <option value="Australia">Australia</option>
-                    <option value="Africa">Africa</option>
                 </select>                    
-                <label class="margin-bottom-small">
+                <label class="margin-bottom">
                     <input type="checkbox" checked="checked" name="remember"> I have read and accept the terms of use
                 </label>                            
-                <input type="submit" value="Sign Up">           
+                <input type="submit" value="Sign Up" class="fullButton">           
             </form>
         </div>
 
-        <div id="sendEmail" class="margin-bottom-big">        
+        <div id="sendEmail">        
             <h1>Send Email</h1>           
             <form action="#">                       
-                <input type="text" placeholder="Your Name" class="margin-bottom-small" required>                              
-                <input id="email" type="email" placeholder="Your Email" class="margin-bottom-small" required>    
-                <textarea id="typeMessage" name="phone" placeholder="Type your message ..." required></textarea>    
-                <label class="margin-bottom-small">
+                <input type="text" placeholder="Your Name" class="margin-bottom midButton" required>                              
+                <input id="email" type="email" placeholder="Your Email" class="margin-bottom midButton" required>    
+                <textarea id="typeMessage" name="phone" placeholder="Type your message ..." required class="midButton"></textarea>    
+                <label class="margin-bottom">
                     <input type="checkbox" checked="checked" name="remember"> Send a copy to my E-mail
                 </label>                                 
-                <input type="submit" value="Send Email">                
+                <input type="submit" value="Send Email" class="fullButton">                
             </form>
         </div>
     </div>
 
+    <!-- RIGHT DIV -->
+
     <div id="right">
-        <div id="signIn" class="margin-bottom-big">    
+        <div id="signIn">    
             <h1>Sign In Form</h1>            
             <form action="#">                        
-                <input type="text" placeholder="Username" class="margin-bottom-small" required>                                
-                <input type="password" placeholder="Password" class="margin-bottom-small" required>               
-                <input type="submit" value="Sign In">                
+                <input type="text" placeholder="Username" class="margin-bottom midButton" required>                                
+                <input type="password" placeholder="Password" class="margin-bottom midButton" required>               
+                <label class="margin-bottom">
+                    <input type="checkbox" checked="checked" name="remember">Remember me
+                </label>                
+                <input type="submit" value="Sign In" class="halfButton">
             </form>    
         </div>            
-        <div id="recover" class="margin-bottom-big">        
-            <h1>Sign In Form</h1>       
+        <div id="recover">        
+            <h1>Recover Form</h1>       
             <form action="#">                    
-                <input type="text" placeholder="Username" class="margin-bottom-small" required>                            
-                <input type="password" placeholder="Password" class="margin-bottom-small" required>            
-                <input type="submit" value="Sign In">            
+                <input type="email" placeholder="Enter your Email" class="margin-bottom midButton" required>    
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" class="margin-bottom midButton" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <input type="submit" value="Send" class="halfButton">
+                <input type="submit" value="Done" class="halfButton float-right">            
+            
+            </form>    
+        </div>
+        <div id="subscribe">        
+            <h1>Subscribe Form</h1>       
+            <form action="#">                    
+                <input type="email" placeholder="Enter your Email" class="margin-bottom midButton" required>    
+                <input type="submit" value="Subscribe" class="halfButton">
+                <input type="submit" value="No, thanks" class="halfButton float-right">         
             </form>    
         </div>
     </div>
@@ -70,4 +88,5 @@
     <!-- Author: Jonasz Cieślar -->
 
 </body>
+
 </html>
